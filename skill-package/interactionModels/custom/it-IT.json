@@ -1,0 +1,993 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "esercizi memoria",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AvantiUnAltroIntent",
+          "slots": [],
+          "samples": [
+            "Avanti un altro",
+            "Indovina inversa",
+            "Giochiamo a parole inverse",
+            "Parole inverse "
+          ]
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "QuizAnswerIntent",
+          "slots": [
+            {
+              "name": "response",
+              "type": "CorrectAnswer"
+            }
+          ],
+          "samples": [
+            "{response} "
+          ]
+        },
+        {
+          "name": "SemanticGameIntent",
+          "slots": [],
+          "samples": [
+            "Categorie semantiche",
+            "Gioca alle categorie semantiche"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Canottiera"
+              }
+            },
+            {
+              "name": {
+                "value": "Reggiseno"
+              }
+            },
+            {
+              "name": {
+                "value": "Mutande"
+              }
+            },
+            {
+              "name": {
+                "value": "Calze"
+              }
+            },
+            {
+              "name": {
+                "value": "Maglia manica lunga"
+              }
+            },
+            {
+              "name": {
+                "value": "T-shirt"
+              }
+            },
+            {
+              "name": {
+                "value": "Camicia"
+              }
+            },
+            {
+              "name": {
+                "value": "Gonna"
+              }
+            },
+            {
+              "name": {
+                "value": "Jeans"
+              }
+            },
+            {
+              "name": {
+                "value": "Pantaloni"
+              }
+            },
+            {
+              "name": {
+                "value": "Costume da bagno uomo"
+              }
+            },
+            {
+              "name": {
+                "value": "Bikini"
+              }
+            },
+            {
+              "name": {
+                "value": "Infradito"
+              }
+            },
+            {
+              "name": {
+                "value": "Ciabatte"
+              }
+            },
+            {
+              "name": {
+                "value": "Maglione"
+              }
+            },
+            {
+              "name": {
+                "value": "Felpa"
+              }
+            },
+            {
+              "name": {
+                "value": "Cappotto"
+              }
+            },
+            {
+              "name": {
+                "value": "Sciarpa"
+              }
+            },
+            {
+              "name": {
+                "value": "Cappello"
+              }
+            },
+            {
+              "name": {
+                "value": "Guanti"
+              }
+            },
+            {
+              "name": {
+                "value": "Stivali"
+              }
+            },
+            {
+              "name": {
+                "value": "Doposci"
+              }
+            },
+            {
+              "name": {
+                "value": "Scarpe con racco"
+              }
+            },
+            {
+              "name": {
+                "value": "Scarpe da ginnastica"
+              }
+            },
+            {
+              "name": {
+                "value": "Mocassini"
+              }
+            },
+            {
+              "name": {
+                "value": "Accappatoio"
+              }
+            },
+            {
+              "name": {
+                "value": "Tuta da ginnastica"
+              }
+            },
+            {
+              "name": {
+                "value": "Cravatta"
+              }
+            },
+            {
+              "name": {
+                "value": "Cintura"
+              }
+            },
+            {
+              "name": {
+                "value": "Bretelle"
+              }
+            },
+            {
+              "name": {
+                "value": "Borsa"
+              }
+            },
+            {
+              "name": {
+                "value": "Borsa portadocumenti"
+              }
+            },
+            {
+              "name": {
+                "value": "Portafogli"
+              }
+            },
+            {
+              "name": {
+                "value": "Portachiavi"
+              }
+            },
+            {
+              "name": {
+                "value": "Berretto"
+              }
+            },
+            {
+              "name": {
+                "value": "Grembiule da cucina"
+              }
+            },
+            {
+              "name": {
+                "value": "Orecchini"
+              }
+            },
+            {
+              "name": {
+                "value": "Collana"
+              }
+            },
+            {
+              "name": {
+                "value": "Anelli"
+              }
+            },
+            {
+              "name": {
+                "value": "Spille"
+              }
+            },
+            {
+              "name": {
+                "value": "Braccialetti"
+              }
+            },
+            {
+              "name": {
+                "value": "Orologio da polso"
+              }
+            },
+            {
+              "name": {
+                "value": "Cerchietto"
+              }
+            },
+            {
+              "name": {
+                "value": "Cuffia"
+              }
+            },
+            {
+              "name": {
+                "value": "Giacca elegante da uomo"
+              }
+            },
+            {
+              "name": {
+                "value": "Tonaca prete"
+              }
+            },
+            {
+              "name": {
+                "value": "Tonaca suora"
+              }
+            },
+            {
+              "name": {
+                "value": "Divisa militare"
+              }
+            },
+            {
+              "name": {
+                "value": "Minigonna"
+              }
+            },
+            {
+              "name": {
+                "value": "Bermuda"
+              }
+            },
+            {
+              "name": {
+                "value": "Pareo"
+              }
+            },
+            {
+              "name": {
+                "value": "Sandali"
+              }
+            },
+            {
+              "name": {
+                "value": "Pile"
+              }
+            },
+            {
+              "name": {
+                "value": "Pelliccia"
+              }
+            },
+            {
+              "name": {
+                "value": "Giubbotto"
+              }
+            },
+            {
+              "name": {
+                "value": "Scarponi"
+              }
+            },
+            {
+              "name": {
+                "value": "Scarpe da uomo"
+              }
+            },
+            {
+              "name": {
+                "value": "Scarpe stringate"
+              }
+            },
+            {
+              "name": {
+                "value": "Zoccoli"
+              }
+            },
+            {
+              "name": {
+                "value": "Portamonete"
+              }
+            },
+            {
+              "name": {
+                "value": "Portacellulare"
+              }
+            },
+            {
+              "name": {
+                "value": "Abito da sposa"
+              }
+            },
+            {
+              "name": {
+                "value": "Smoking"
+              }
+            },
+            {
+              "name": {
+                "value": "Camicia"
+              }
+            },
+            {
+              "name": {
+                "value": "Ciondoli"
+              }
+            },
+            {
+              "name": {
+                "value": "Fedi nuziali"
+              }
+            },
+            {
+              "name": {
+                "value": "Cavigliera"
+              }
+            },
+            {
+              "name": {
+                "value": "Orologio da taschino"
+              }
+            },
+            {
+              "name": {
+                "value": "Gemelli"
+              }
+            },
+            {
+              "name": {
+                "value": "Fermacravatta"
+              }
+            },
+            {
+              "name": {
+                "value": "Fermacapelli"
+              }
+            },
+            {
+              "name": {
+                "value": "Mollette"
+              }
+            },
+            {
+              "name": {
+                "value": "Boxer"
+              }
+            },
+            {
+              "name": {
+                "value": "Cappello da chef"
+              }
+            },
+            {
+              "name": {
+                "value": "Grembiule da chef"
+              }
+            },
+            {
+              "name": {
+                "value": "Tuta da meccanico"
+              }
+            },
+            {
+              "name": {
+                "value": "Collant"
+              }
+            },
+            {
+              "name": {
+                "value": "Gilet"
+              }
+            },
+            {
+              "name": {
+                "value": "Abito elegante da donna"
+              }
+            },
+            {
+              "name": {
+                "value": "Mantella per la pioggia"
+              }
+            },
+            {
+              "name": {
+                "value": "Gabbiano"
+              }
+            },
+            {
+              "name": {
+                "value": "Pappagallo"
+              }
+            },
+            {
+              "name": {
+                "value": "Farfalla"
+              }
+            },
+            {
+              "name": {
+                "value": "Falco"
+              }
+            },
+            {
+              "name": {
+                "value": "Pellicano"
+              }
+            },
+            {
+              "name": {
+                "value": "Rondine"
+              }
+            },
+            {
+              "name": {
+                "value": "Tricheco"
+              }
+            },
+            {
+              "name": {
+                "value": "Foca"
+              }
+            },
+            {
+              "name": {
+                "value": "Polpo"
+              }
+            },
+            {
+              "name": {
+                "value": "Medusa"
+              }
+            },
+            {
+              "name": {
+                "value": "Granchio"
+              }
+            },
+            {
+              "name": {
+                "value": "Delfino"
+              }
+            },
+            {
+              "name": {
+                "value": "Balena"
+              }
+            },
+            {
+              "name": {
+                "value": "Pesce"
+              }
+            },
+            {
+              "name": {
+                "value": "Coccodrillo"
+              }
+            },
+            {
+              "name": {
+                "value": "Scoiattolo"
+              }
+            },
+            {
+              "name": {
+                "value": "Lupo"
+              }
+            },
+            {
+              "name": {
+                "value": "Volpe"
+              }
+            },
+            {
+              "name": {
+                "value": "Ghiro"
+              }
+            },
+            {
+              "name": {
+                "value": "Cervo"
+              }
+            },
+            {
+              "name": {
+                "value": "Castoro"
+              }
+            },
+            {
+              "name": {
+                "value": "Orso bruno"
+              }
+            },
+            {
+              "name": {
+                "value": "Stambecco"
+              }
+            },
+            {
+              "name": {
+                "value": "Marmotta"
+              }
+            },
+            {
+              "name": {
+                "value": "Orso bianco"
+              }
+            },
+            {
+              "name": {
+                "value": "Elefante"
+              }
+            },
+            {
+              "name": {
+                "value": "Giraffa"
+              }
+            },
+            {
+              "name": {
+                "value": "Leone"
+              }
+            },
+            {
+              "name": {
+                "value": "Zebra"
+              }
+            },
+            {
+              "name": {
+                "value": "Tigre"
+              }
+            },
+            {
+              "name": {
+                "value": "Lumaca"
+              }
+            },
+            {
+              "name": {
+                "value": "Serpente"
+              }
+            },
+            {
+              "name": {
+                "value": "Cane"
+              }
+            },
+            {
+              "name": {
+                "value": "Gatto"
+              }
+            },
+            {
+              "name": {
+                "value": "Mucca"
+              }
+            },
+            {
+              "name": {
+                "value": "Cavallo"
+              }
+            },
+            {
+              "name": {
+                "value": "Asino"
+              }
+            },
+            {
+              "name": {
+                "value": "Coniglio"
+              }
+            },
+            {
+              "name": {
+                "value": "Pecora"
+              }
+            },
+            {
+              "name": {
+                "value": "Capra"
+              }
+            },
+            {
+              "name": {
+                "value": "Gallina"
+              }
+            },
+            {
+              "name": {
+                "value": "Maiale"
+              }
+            },
+            {
+              "name": {
+                "value": "Rana"
+              }
+            },
+            {
+              "name": {
+                "value": "Oca"
+              }
+            },
+            {
+              "name": {
+                "value": "Ape"
+              }
+            },
+            {
+              "name": {
+                "value": "Coccinella"
+              }
+            },
+            {
+              "name": {
+                "value": "Formica"
+              }
+            },
+            {
+              "name": {
+                "value": "Cigno"
+              }
+            },
+            {
+              "name": {
+                "value": "Rinoceronte"
+              }
+            },
+            {
+              "name": {
+                "value": "Pinquino"
+              }
+            },
+            {
+              "name": {
+                "value": "Zanzara"
+              }
+            },
+            {
+              "name": {
+                "value": "Leopardo"
+              }
+            },
+            {
+              "name": {
+                "value": "Lombrico"
+              }
+            },
+            {
+              "name": {
+                "value": "Libellula"
+              }
+            },
+            {
+              "name": {
+                "value": "Gufo"
+              }
+            },
+            {
+              "name": {
+                "value": "Salmone"
+              }
+            },
+            {
+              "name": {
+                "value": "Tartaruga marina"
+              }
+            },
+            {
+              "name": {
+                "value": "Anquilla"
+              }
+            },
+            {
+              "name": {
+                "value": "Vipera"
+              }
+            },
+            {
+              "name": {
+                "value": "Scorpione"
+              }
+            },
+            {
+              "name": {
+                "value": "Puzzola"
+              }
+            },
+            {
+              "name": {
+                "value": "Tucano"
+              }
+            },
+            {
+              "name": {
+                "value": "Germano reale"
+              }
+            },
+            {
+              "name": {
+                "value": "Airone"
+              }
+            },
+            {
+              "name": {
+                "value": "Pipistrello"
+              }
+            },
+            {
+              "name": {
+                "value": "Aragosta"
+              }
+            },
+            {
+              "name": {
+                "value": "Cinghiale"
+              }
+            },
+            {
+              "name": {
+                "value": "Canguro"
+              }
+            },
+            {
+              "name": {
+                "value": "Cammello"
+              }
+            },
+            {
+              "name": {
+                "value": "Cavalletta"
+              }
+            },
+            {
+              "name": {
+                "value": "Gamberetto"
+              }
+            },
+            {
+              "name": {
+                "value": "Sogliola"
+              }
+            },
+            {
+              "name": {
+                "value": "Trota"
+              }
+            },
+            {
+              "name": {
+                "value": "Istrice"
+              }
+            },
+            {
+              "name": {
+                "value": "Struzzo"
+              }
+            },
+            {
+              "name": {
+                "value": "Squalo"
+              }
+            },
+            {
+              "name": {
+                "value": "Orca"
+              }
+            },
+            {
+              "name": {
+                "value": "Tonno"
+              }
+            },
+            {
+              "name": {
+                "value": "Vitello"
+              }
+            },
+            {
+              "name": {
+                "value": "Lontra"
+              }
+            },
+            {
+              "name": {
+                "value": "Fenicottero"
+              }
+            },
+            {
+              "name": {
+                "value": "Picchio"
+              }
+            },
+            {
+              "name": {
+                "value": "Sorpasso"
+              }
+            },
+            {
+              "name": {
+                "value": "Gambe"
+              }
+            },
+            {
+              "name": {
+                "value": "Pidocchio"
+              }
+            },
+            {
+              "name": {
+                "value": "Baudo"
+              }
+            },
+            {
+              "name": {
+                "value": "Tovaglietta",
+                "synonyms": [
+                  "Tovaglia"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Trovatore"
+              }
+            },
+            {
+              "name": {
+                "value": "Destra"
+              }
+            },
+            {
+              "name": {
+                "value": "Inter"
+              }
+            },
+            {
+              "name": {
+                "value": "Ponente"
+              }
+            },
+            {
+              "name": {
+                "value": "Leone"
+              }
+            },
+            {
+              "name": {
+                "value": "Rosso"
+              }
+            },
+            {
+              "name": {
+                "value": "Sandali"
+              }
+            },
+            {
+              "name": {
+                "value": "Cubo"
+              }
+            },
+            {
+              "name": {
+                "value": "Don Chisciotte"
+              }
+            },
+            {
+              "name": {
+                "value": "Piede"
+              }
+            },
+            {
+              "name": {
+                "value": "Polso"
+              }
+            },
+            {
+              "id": "5",
+              "name": {
+                "value": "80",
+                "synonyms": [
+                  "Ottanta"
+                ]
+              }
+            },
+            {
+              "id": "4",
+              "name": {
+                "value": "Sodo"
+              }
+            },
+            {
+              "id": "3",
+              "name": {
+                "value": "Patate"
+              }
+            },
+            {
+              "id": "2",
+              "name": {
+                "value": "Crick"
+              }
+            },
+            {
+              "id": "1",
+              "name": {
+                "value": "Veltroni"
+              }
+            }
+          ],
+          "name": "CorrectAnswer"
+        }
+      ]
+    }
+  },
+  "version": "8"
+}

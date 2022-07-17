@@ -1,0 +1,76 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "it-IT": {
+          "summary": "La skill permetterà ai pazienti affetti da demenza senile di allenare la propria memoria a breve termine con semplici giochi.",
+          "examplePhrases": [
+            "Alexa, apri esercizi memoria"
+          ],
+          "keywords": [
+            "memoria",
+            "esercizi",
+            "memoria",
+            "Alzheimer",
+            "demenza",
+            "senile"
+          ],
+          "name": "Esercizi Memoria",
+          "description": "La skill permetterà ai pazienti affetti da demenza senile di allenare la propria memoria a breve termine con semplici giochi. \nSono presenti due giochi, uno in cui bisogna indicare la risposta errata, ed uno gioco sulle categorie semantiche in cui bisogna identificare l\u0027oggetto sbagliato presente nella lista.",
+          "smallIconUri": "file://assets/images/it-IT_smallIconUri.png",
+          "largeIconUri": "file://assets/images/it-IT_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "sourceLocaleForLanguages": [],
+        "isActive": false
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "Giochiamo a parole inverse\nCategorie semantiche",
+      "category": "MEMORY_GAMES",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": [
+        "IT"
+      ]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:166575195809:function:5ef834e7-26f1-4ea2-bf7d-419da4a0d920:Release_0"
+        },
+        "interfaces": [],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:166575195809:function:5ef834e7-26f1-4ea2-bf7d-419da4a0d920:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:166575195809:function:5ef834e7-26f1-4ea2-bf7d-419da4a0d920:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:166575195809:function:5ef834e7-26f1-4ea2-bf7d-419da4a0d920:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "it-IT": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "shoppingKit": {
+        "isShoppingActionsEnabled": false
+      },
+      "usesPersonalInfo": false
+    }
+  }
+}
